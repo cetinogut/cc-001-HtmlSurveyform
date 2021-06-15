@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_new.css">
+    <title>dastugoSoft-Clarusway Surwey Form</title>
+</head>
+<body>
+    <div>
+        <h1>Clarusway Survey Form</h1>
+        <p>Thank you for taking the time to help us improve the platform</p>
+        
+
+        <form id="survey-form" action="result.html" method="GET">
+            <div>
+                <div>
+                    <!-- if we want to locate name label next to input are, this will be a good solution.
+                    <label>Name
+                    <input type="text" name="nameDb" id="nameLabel" placeholder="enter your name"required><br>
+                    </label> -->
+                    <label for="nameLabel" id="name-label">Name</label><br>
+                    <input type="text" name='nameDb' placeholder="Enter your name" id="nameLabel" required><br>
+                </div>
+                <div>
+                    <label for="surNameLabel" id="surName-label">Surname</label><br>
+                    <input type="text" name='surNameDb' placeholder="Enter your Surname" id="surNameLabel" required><br>
+                </div>
+            
+                <div>
+                    <label for="emailLabel" id="email-label">Email</label><br>
+                    <input type="email" class="form-control" name="emailDb" placeholder="user@clarusway.com" id="emailLabel" required><br>
+                </div>
+        
+                <div>
+                    <p>Which option best describes your current role?</p><br>
+                        <select class="form-control" name="currentRoles" required id="currentRolesDropDown">
+                            <option value="" disabled selected hidden>Select current role</option>
+                            <option value="student">Student</option>
+                            <option value="teacher">Teacher</option>
+                            <option value="fulltj">Full Time Job</option>
+                            <option value="parttj">Part Time Job</option>
+                            <option value="fulltl">Full Time Learner</option>
+                            <option value="preferno">Prefer not to say</option>
+                        </select>
+                </div>
+
+                <div>
+                    <p>Would you recommend Clarusway to a friend?</p><br>
+                    <label for="radioBtnFirst"><input type="radio" id="radioBtnFirst" name="recommendDb" value="yes" checked> Definetely, Yes</label><br>
+                    <label for="radioBtnSecond"><input type="radio" id="radioBtnSecond" name="recommendDb" value="maybe"> Maybe</label><br>
+                    <label for="radioBtnThird"><input type="radio" id="radioBtnThird" name="recommendDb" value="notsure"> Not sure</label><br>
+                    <label for="radioBtnFourth"><input type="radio" id="radioBtnFourth" name="recommendDb" value="no"> Definetely, No</label><br>
+                </div>
+
+                <div>
+                <p>What is your favorite feature of Clarusway?</p><br>
+                    <select class="form-control" name="favoriteFeatures" required id="favoriteFeaturesDropDown">
+                        <option value="" disabled selected hidden>Select an option</option>
+                        <option value="courses">courses</option>
+                        <option value="projects">Projects</option>
+                        <option value="community">Community</option>
+                        <option value="mentors">Mentors</option>
+                    </select>
+                </div>
+
+                <div>
+                <p>What would you like to see improved? <span>(Check all that apply)</span></p><br>
+                    <label for="checkboxFirst"><input type="checkbox" id="checkboxFirst" name="movieType1Db" value="front-end projects">
+                    Front-end Projects</label><br>
+                    <label for="checkboxSecond"><input type="checkbox" id="checkboxSecond" name="movieType2Db" value="back-end projects">
+                    Back-end Projects</label><br>
+                    <label for="checkboxThird"><input type="checkbox" id="checkboxThird" name="movieType3Db" value="data science" >
+                    Data Science</label><br>
+                    <label for="checkboxFourth"><input type="checkbox" id="checkboxFourth" name="movieType4Db" value="additional courses" >
+                    Additional Courses</label><br>
+                </div>
+
+                <div class="textarea box">
+                <p>Any comments or suggestions?</p><br>
+                    <textarea name="commnents" rows="2" cols="20" placeholder="Enter your comment here... Thanks for your comments..."></textarea><br />
+                </div>
+                <div>
+                    <input type="submit" id="submitBtn">
+                </div>
+            </div>
+        </form>
+
+
+    </div>
+</body>
+</html>
